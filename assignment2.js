@@ -13,12 +13,17 @@
 
 //loop "from" until "to";
 
+let from = parseInt(document.getElementById('from').value); 
+let to = parseInt(document.getElementById('to').value); 
+
 function convert(isFtoC, from, to) {
     if (document.getElementById('convert').value == "celsius") {
         let isFtoC = true;
-        let from = parseInt(document.getElementById('from').value); 
-        let to = parseInt(document.getElementById('to').value); 
-        
+        convertFtoC(from, to);
+
+    }
+    else {
+        let isFtoC = false;
     }
 }
 
